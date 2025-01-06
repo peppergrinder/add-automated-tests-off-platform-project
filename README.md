@@ -1,10 +1,16 @@
 # BankAccount
 This is an educational public repository to illustrate the power of automated testing through Github Actions.
 
+This fork is a fork from peppergrinder. In 2025 some updates where necessary (python3)
+
 ## Run locally
-1. Set up Python virtual environment.
+1. Set up Python virtual environment. This will create a new directory "venv"
 ```
-~~python -m venv venv~~ python3 is needed in 2025
+python3 -m venv venv
+#activate venv:
+source venv/bin/activate
+# To disable the virtual environment, run the command: deactivate
+
 ```
 2. Install required dependencies.
 ```
@@ -12,7 +18,7 @@ pip install -r requirements.txt
 ```
 3. Run unit tests.
 ```
-python -m pytest
+python3 -m pytest
 ```
 4. Run the app.
 ```
