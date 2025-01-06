@@ -4,7 +4,7 @@ This is an educational public repository to illustrate the power of automated te
 ## Run locally
 1. Set up Python virtual environment.
 ```
-python -m venv venv
+~~python -m venv venv~~ python3 is needed in 2025
 ```
 2. Install required dependencies.
 ```
