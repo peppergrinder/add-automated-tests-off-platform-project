@@ -24,13 +24,24 @@ python3 -m pytest
 ```
 python app.py
 ```
+5. Connect to localhost at 127.0.0.1:5000
+6. Add 100
+   ```
+   http://127.0.0.1:5000/deposit?amount=100
+   ```
+7. Withdraw 50
+   ```
+   http://127.0.0.1:5000/withdraw?amount=50
+   ```
 
 ## Code Description
 
 1. app.py: A flask application that exposes the following API endpoints: 
   - index at / : Retun a JSON data structure indicating the current balance. 
-  - deposit at /deposit : Take the deposit amount as a URL parameter and return the new balance after adding the amount. 
-  - withdraw at /withdraw : Take the withdrawal amount as a URL parameter and return the new balance after subtracting the amount. 
+  - deposit at /deposit : Take the deposit amount as a URL parameter and return the new balance after adding the amount.
+    `http://127.0.0.1:5000/deposit?amount=100`
+  - withdraw at /withdraw : Take the withdrawal amount as a URL parameter and return the new balance after subtracting the amount.
+     `http://127.0.0.1:5000/withdraw?amount=50`
 App relies on a global in-memory variable (`balance`) to store the balance of the account.
 
 2. requirements.txt: A text file including all the Python libraries and packages needed to run the app. 
